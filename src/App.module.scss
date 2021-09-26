@@ -1,0 +1,12 @@
+@import "./styles/main";
+
+.btn {
+  @include btn();
+}
+.app{
+  padding-top: 3rem;
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}

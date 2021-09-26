@@ -1,0 +1,9 @@
+@mixin btn( $width: 200px, $bg-color: #ffffff, $border-width: 2px, $color-border: #000000, $font-color: #000000) {
+  border-radius: 10px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: $bg-color;
+  border: $border-width solid $color-border;
+  font-size: 18px;
+  color: $font-color;
+  width: $width;
+}
