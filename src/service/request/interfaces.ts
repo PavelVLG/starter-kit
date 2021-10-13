@@ -1,8 +1,6 @@
-export interface PostBook{
-    title: string,
-    content: string,
-    progress: number,
-    user: number 
+export interface I_Regisrtration{
+    email: string,
+    password: string,
 }
 
 export interface DeleteBook{

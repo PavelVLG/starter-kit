@@ -16,13 +16,19 @@ function App() {
         <div className={app}>
           
             <button className={btn} onClick={(event:React.MouseEvent<HTMLButtonElement>) => {
-                getRequest().then(r => console.log('successfully:', r))
+
+                getRequest('http://127.0.0.1:8000/api/users').then(r => console.log('successfully:', r))
+            
             }}>GET Request
             </button>
+
             <button className={btn} onClick={(event:React.MouseEvent<HTMLButtonElement>) => {
-                postRequest('http://127.0.0.1:8000/api/v1/books/book/create/',{title:'Заголовок', content: 'Контент', user: 1, progress: 1}).then(r => console.log('successfully:', r))
+                
+                postRequest('http://127.0.0.1:8000/api/registration',{email: 'mail@mail.mail', password:'42 response all questions'}).then(r => console.log('successfully:', r))
+            
             }}>POST Request
             </button>
+            
             <button className={btn} onClick={(event:React.MouseEvent<HTMLButtonElement>) => {
                 deleteRequest().then(r => console.log('successfully:', r))
             }}>DELETE Request

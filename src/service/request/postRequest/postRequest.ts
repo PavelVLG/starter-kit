@@ -1,8 +1,8 @@
 import axios from "axios";
-import {PostBook} from '../interfaces'
+import {I_Regisrtration} from '../interfaces'
 
 
-export const postRequest = (url: string = 'http://localhost:8000/api/create/', data: PostBook) => {
+export const postRequest = (url: string = 'http://localhost:8000/api/create/', data: I_Regisrtration) => {
  return  axios.post(url, data)
  .catch(function (error) {
     if (error.response) {
