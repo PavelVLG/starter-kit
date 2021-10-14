@@ -1,7 +1,9 @@
 import axios from "axios";
 import {I_Regisrtration} from './interfaces'
 
-export const getRequest = (url = 'http://127.0.0.1:8000/api/v1/books/all/') => {
+
+
+export const getRequest =  async (url: string =  'https://jsonplaceholder.typicode.com/todos/1') => {
     return axios.get(url)
         .then((response) => {
             return response;
@@ -48,3 +50,5 @@ export const deleteRequest = (url = 'http://127.0.0.1:8000/api/v1/books/book/det
             console.log(error.config);
         });
 };*/
+
+
